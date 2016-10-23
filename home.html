@@ -1,0 +1,152 @@
+<html>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+<div id="container" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div><br/>
+<div id="container2" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+
+<script>
+$(function () {
+    $('#container').highcharts({
+        title: {
+            text: 'Bloodline Ratings',
+        },
+        subtitle: {
+        },
+        xAxis: {
+                min:0,
+            title: {
+                enabled: true,
+                text: 'Episode'
+            },
+            startOnTick: true,
+            endOnTick: true,
+            showLastLabel: true
+        },
+        yAxis: {
+                min:0,
+                max:10,
+            title: {
+                text: 'Average Ratings'
+            }
+        },
+        tooltip: {
+              headerFormat: 'Episode: <b>{point.x}</b><br>',
+            pointFormat: '{series.name} Ratings: <b>{point.y}</b><br/>',
+            shared: true
+        },
+
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle',
+            borderWidth: 0
+        },
+        series: [{
+            name: 'Season 1',
+            color: 'rgba(223, 83, 83, .5)',
+            data: [[1, 8.0], [2, 8.1], [3, 8.0], [4, 8.0], [5, 8.2], [6, 8.2], [7, 8.2], [8, 8.4], [9, 8.5], [10, 8.8], [11, 9.2], [12, 9.3], [13, 9.1]]
+
+        }, {
+            name: 'Season 2',
+            color: 'rgba(119, 152, 191, .5)',
+            data: [[1, 8.3], [2, 8.2], [3, 8.5], [4, 8.8], [5, 8.4], [6, 8.8], [7, 8.7], [8, 9.0], [9, 9.0], [10, 9.4]]
+        }]
+    });
+});
+</script>
+<script>
+    $(function () {
+        $('#container2').highcharts({
+            title: {
+                text: 'Trailer Park Boys',
+            },
+            subtitle: {
+            },
+            xAxis: {
+                    min:0,
+                title: {
+                    enabled: true,
+                    text: 'Episode'
+                },
+                startOnTick: true,
+                endOnTick: true,
+                showLastLabel: true
+            },
+            yAxis: {
+                    max:10,
+                title: {
+                    text: 'Average Ratings'
+                }
+            },
+            tooltip: {
+                  headerFormat: 'Episode: <b>{point.x}</b><br>',
+                pointFormat: '{series.name} Ratings: <b>{point.y}</b><br/>',
+                shared: true
+            },
+
+            legend: {
+                layout: 'vertical',
+                align: 'right',
+                verticalAlign: 'middle',
+                borderWidth: 0
+            },
+            series: [
+            {
+                name: 'Season 1',
+                color: 'rgba(223, 83, 83, .5)',
+                data: [[1, 8.2], [2, 8.5], [3, 8.7], [4, 8.7], [5, 8.8], [6, 9.0]]
+           },
+           {
+                name: 'Season 2',
+                color: 'rgba(119, 152, 191, .5)',
+                data: [[1, 9.0], [2, 9.0], [3, 9.1], [4, 9.0], [5, 9.2], [6, 9.1], [7, 9.3]]
+            },
+           {
+                name: 'Season 3',
+                color: 'rgba(169, 182, 191, .5)',
+                data: [[1, 9.0], [2, 9.1], [3, 9.3], [4, 9.2], [5, 9.5], [6, 9.1], [7, 9.0], [8, 9.2]]
+            },
+           {
+                name: 'Season 4',
+                color: 'rgba(169, 132, 12, .5)',
+                data: [[1, 9.2], [2, 9.1], [3, 9.1], [4, 9.2], [5, 9.4], [6, 9.1], [7, 9.2], [8, 9.3], [9, 9.2]]
+            },
+            {
+                name: 'Season 5',
+                color: 'rgba(179, 22, 292, .5)',
+                data: [[1, 9.1], [2, 9.2], [3, 9.2], [4, 9.1], [5, 9.2], [6, 9.1], [7, 9.2], [8, 9.0], [9, 9.3], [10, 9.4]]
+            },
+           {
+                name: 'Season 6',
+                color: 'rgba(79, 22, 292, .5)',
+                data: [[1, 8.6], [2, 8.6], [3, 9.1], [4, 8.8], [5, 9.1], [6, 9.3]]
+            },
+           {
+                name: 'Season 7',
+                color: 'rgba(17, 232, 292, .5)',
+                data: [[1, 8.5], [2, 8.4], [3, 9.1], [4, 8.7], [5, 8.7], [6, 8.7], [7, 8.2], [8, 9.0], [9, 8.7], [10, 9.4]]
+            },
+           {
+                name: 'Season 8',
+                color: 'rgba(179, 22, 92, .5)',
+                data: [[1, 8.6], [2, 8.3], [3, 8.5], [4, 8.4], [5, 8.5], [6, 8.6], [7, 8.1], [8, 8.1], [9, 8.1], [10, 8.5]]
+            },
+           {
+                name: 'Season 9',
+                color: 'rgba(119, 22, 292, .5)',
+                data: [[1, 7.8], [2, 7.9], [3, 8.0], [4, 7.9], [5, 7.9], [6, 7.9], [7, 8.2], [8, 7.9], [9, 8.0], [10, 8.2]]
+            },
+           {
+                name: 'Season 10',
+                color: 'rgba(179, 224, 22, .5)',
+                data: [[1, 7.7], [2, 7.8], [3, 7.7], [4, 7.8], [5, 8.1], [6, 7.1], [7, 7.3], [8, 6.8], [9, 7.4], [10, 8.2]]
+            },
+            ]
+        });
+    });
+</script>
+</body>
+</html>
