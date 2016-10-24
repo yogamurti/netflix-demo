@@ -88,7 +88,7 @@ function TrailerParkBoys(){
         text: $('<div/>').html('Trailer Park Boys').text(),
         style: {
           color: "#FFF",
-          font: '26px Oxygen, sans-serif',
+          font: '26px Lucida Sans Unicode',
           fontWeight: 300,
         }
       },
