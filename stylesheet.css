@@ -1,15 +1,21 @@
 body{
     background-color:#17202A;
 }
+
+.shows{
+    text-align:center;
+}
+
 .optionButton {
     background-color: #e50914;
     color: white;
-    padding: 16px;
     margin: 10px;
     font-size: 16px;
     border-style: solid;
     cursor: pointer;
     border: solid 2px #cccccc;
+    width:230px;
+    height:50px;
 }
 
 .optionButton:hover {

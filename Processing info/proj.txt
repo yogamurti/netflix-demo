@@ -1,0 +1,8 @@
+bottom function &)
+chart:
+x&y axis
+title style
+credits
+tooltip
+plotoptions
+delete trendlines,scatter from each season
