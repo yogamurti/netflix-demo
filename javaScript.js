@@ -10569,3 +10569,393 @@ function houseOfCards() {
       ]
   });
 };
+// Easy
+function easy() {
+  $('#graph').highcharts({
+      chart: {
+        backgroundColor: "#17202A",
+        spacingTop: 24,
+        style: {
+          fontSize: 12,
+          fontFamily: 'Oxygen, sans-serif',
+          fontWeight: 300,
+        }
+      },
+      navigation: {
+        buttonOptions: {
+          theme: {
+            fill: '#333333',
+            stroke: '#000',
+            states: {
+              hover: {
+                  fill: '#474747',
+                  stroke: '#333',
+              },
+              select: {
+                  fill: '#474747',
+                  stroke: '#333',
+              }
+            }
+          }
+        }
+     },
+      yAxis: {
+        max: 10,
+        allowDecimals: false,
+        title: {
+          text: "Average iMDb Rating",
+          style: {
+            color: "#FFF",
+            fontWeight: 300,
+          }
+        },
+        labels: {
+          style: {
+            color: "#999",
+          }
+        },
+        gridLineColor: 'rgba(255, 255, 255, .1)'
+      },
+      xAxis: {
+        tickColor: "#333", // hide ticks
+        lineColor: "#333", // hide line
+        allowDecimals: false,
+        title: {
+          text: "Episode Number",
+          style: {
+            color: "#FFF",
+            fontWeight: 300,
+          }
+        },
+        labels: {
+          style: {
+            color: "#999",
+          }
+        }
+      },
+      title: {
+        text: $('<div/>').html('Easy').text(),
+        style: {
+          color: "#FFF",
+          font: '26px Lucida Sans Unicode',
+          fontWeight: 300,
+        }
+      },
+      legend: {
+        enabled: false
+      },
+      credits: {
+        href: "http://graphtv.kevinformatics.com",
+        text: "Inspiration from graphtv"
+      },
+      tooltip: {
+        useHTML: true,
+        formatter: function() {
+            return [
+                    "<b>", this.point.id, "</b>", "<br>",
+                    this.point.title, "<br>", 
+                    "Rating: ", this.point.rating, "<br>", 
+                    "Votes: ", this.point.votes
+                   ].join("");
+        }
+      },
+      series: [
+      {
+        name: 'Season 1',
+        color: '#79f2c0',
+        data: [
+        
+          {
+            x:       1,
+            y:       6.4,
+            imdb_id: '4625398',
+            id:      's01e01',
+            title:   $('<div/>').html('The F**King Study').text(),
+            rating:  '6.4',
+            votes:   '197'
+          },
+        
+          {
+            x:       2,
+            y:       6.4,
+            imdb_id: '4662772',
+            id:      's01e02',
+            title:   $('<div/>').html('Vegan Cinderella').text(),
+            rating:  '6.4',
+            votes:   '164'
+          },
+        
+          {
+            x:       3,
+            y:       6.4,
+            imdb_id: '4662796',
+            id:      's01e03',
+            title:   $('<div/>').html('Brewery Brothers').text(),
+            rating:  '6.4',
+            votes:   '133'
+          },
+        
+          {
+            x:       4,
+            y:       6.4,
+            imdb_id: '4662788',
+            id:      's01e04',
+            title:   $('<div/>').html('Controlada').text(),
+            rating:  '6.4',
+            votes:   '121'
+          },
+        
+          {
+            x:       5,
+            y:       7.6,
+            imdb_id: '4662794',
+            id:      's01e05',
+            title:   $('<div/>').html('Art and Life').text(),
+            rating:  '7.6',
+            votes:   '121'
+          },
+        
+          {
+            x:       6,
+            y:       7.3,
+            imdb_id: '4662786',
+            id:      's01e06',
+            title:   $('<div/>').html('Utopia').text(),
+            rating:  '7.3',
+            votes:   '107'
+          },
+        
+          {
+            x:       7,
+            y:       6.3,
+            imdb_id: '4662802',
+            id:      's01e07',
+            title:   $('<div/>').html('Chemistry Read').text(),
+            rating:  '7.0',
+            votes:   '84'
+          },
+        
+          {
+            x:       8,
+            y:       6.7,
+            imdb_id: '4662800',
+            id:      's01e08',
+            title:   $('<div/>').html('Hop Dreams').text(),
+            rating:  '6.7',
+            votes:   '74'
+          },
+        ],
+        marker: {
+            radius: 4,
+            symbol: "circle"
+        }
+      },
+      
+      ]
+  });
+};
+// Easy
+function love() {
+  $('#graph').highcharts({
+      chart: {
+        backgroundColor: "#17202A",
+        spacingTop: 24,
+        style: {
+          fontSize: 12,
+          fontFamily: 'Oxygen, sans-serif',
+          fontWeight: 300,
+        }
+      },
+      navigation: {
+        buttonOptions: {
+          theme: {
+            fill: '#333333',
+            stroke: '#000',
+            states: {
+              hover: {
+                  fill: '#474747',
+                  stroke: '#333',
+              },
+              select: {
+                  fill: '#474747',
+                  stroke: '#333',
+              }
+            }
+          }
+        }
+     },
+      yAxis: {
+        max: 10,
+        allowDecimals: false,
+        title: {
+          text: "Average iMDb Rating",
+          style: {
+            color: "#FFF",
+            fontWeight: 300,
+          }
+        },
+        labels: {
+          style: {
+            color: "#999",
+          }
+        },
+        gridLineColor: 'rgba(255, 255, 255, .1)'
+      },
+      xAxis: {
+        tickColor: "#333", // hide ticks
+        lineColor: "#333", // hide line
+        allowDecimals: false,
+        title: {
+          text: "Episode Number",
+          style: {
+            color: "#FFF",
+            fontWeight: 300,
+          }
+        },
+        labels: {
+          style: {
+            color: "#999",
+          }
+        }
+      },
+      title: {
+        text: $('<div/>').html('Love').text(),
+        style: {
+          color: "#FFF",
+          font: '26px Lucida Sans Unicode',
+          fontWeight: 300,
+        }
+      },
+      legend: {
+        enabled: false
+      },
+      credits: {
+        href: "http://graphtv.kevinformatics.com",
+        text: "Inspiration from graphtv"
+      },
+      tooltip: {
+        useHTML: true,
+        formatter: function() {
+            return [
+                    "<b>", this.point.id, "</b>", "<br>",
+                    this.point.title, "<br>", 
+                    "Rating: ", this.point.rating, "<br>", 
+                    "Votes: ", this.point.votes
+                   ].join("");
+        }
+      },
+      series: [
+      {
+        name: 'Season 1',
+        color: '#79f2c0',
+        data: [
+        
+          {
+            x:       1,
+            y:       7.5,
+            imdb_id: '4625398',
+            id:      's01e01',
+            title:   $('<div/>').html('It Begins').text(),
+            rating:  '7.5',
+            votes:   '571'
+          },
+        
+          {
+            x:       2,
+            y:       8.4,
+            imdb_id: '4662772',
+            id:      's01e02',
+            title:   $('<div/>').html('One Long Day').text(),
+            rating:  '8.4',
+            votes:   '470'
+          },
+        
+          {
+            x:       3,
+            y:       7.6,
+            imdb_id: '4662796',
+            id:      's01e03',
+            title:   $('<div/>').html('Tested').text(),
+            rating:  '7.6',
+            votes:   '396'
+          },
+        
+          {
+            x:       4,
+            y:       8.2,
+            imdb_id: '4662788',
+            id:      's01e04',
+            title:   $('<div/>').html('Party in the Hills').text(),
+            rating:  '8.2',
+            votes:   '397'
+          },
+        
+          {
+            x:       5,
+            y:       8.6,
+            imdb_id: '4662794',
+            id:      's01e05',
+            title:   $('<div/>').html('The Date').text(),
+            rating:  '8.6',
+            votes:   '425'
+          },
+        
+          {
+            x:       6,
+            y:       7.9,
+            imdb_id: '4662786',
+            id:      's01e06',
+            title:   $('<div/>').html('Andy').text(),
+            rating:  '7.9',
+            votes:   '370'
+          },
+        
+          {
+            x:       7,
+            y:       8,
+            imdb_id: '4662802',
+            id:      's01e07',
+            title:   $('<div/>').html('Magic').text(),
+            rating:  '8.0',
+            votes:   '335'
+          },
+        
+          {
+            x:       8,
+            y:       8.3,
+            imdb_id: '4662800',
+            id:      's01e08',
+            title:   $('<div/>').html('Closing Title Song').text(),
+            rating:  '8.3',
+            votes:   '342'
+          },
+
+          {
+            x:       9,
+            y:       8.4,
+            imdb_id: '4662800',
+            id:      's01e09',
+            title:   $('<div/>').html('The Table Read').text(),
+            rating:  '8.4',
+            votes:   '328'
+          },
+
+          {
+            x:       10,
+            y:       8.5,
+            imdb_id: '4662800',
+            id:      's01e10',
+            title:   $('<div/>').html('The End of the Beginning').text(),
+            rating:  '8.5',
+            votes:   '367'
+          },
+        ],
+        marker: {
+            radius: 4,
+            symbol: "circle"
+        }
+      },
+      
+      ]
+  });
+};
