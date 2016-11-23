@@ -10754,7 +10754,7 @@ function easy() {
       ]
   });
 };
-// Easy
+// Love
 function love() {
   $('#graph').highcharts({
       chart: {
